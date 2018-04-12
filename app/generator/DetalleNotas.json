@@ -1,0 +1,117 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+      {
+        "name": "id_cur",
+        "dbType": "integer:unsigned:default,0:foreign,cursos,id",
+        "relation": "mt1,Curso,id_cur,id"
+    },
+
+    {
+        "name": "nombreCurso_cur_det",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+
+
+    {
+        "name": "codigoGrupo_gru_det",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+
+    {
+        "name": "nombreDocente_det",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "codigoEstudiante_det",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+
+    {
+        "name": "nombreEstudiante_det",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    {
+        "name": "nota1_det",
+        "dbType": "number",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": true
+    },
+
+
+    {
+        "name": "nota2_det",
+        "dbType": "number",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": true
+    },
+
+
+    {
+        "name": "nota3_det",
+        "dbType": "number",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": true
+    },
+
+
+    {
+        "name": "promedio_det",
+        "dbType": "number",
+        "htmlType": "text",
+        "validations": "",
+        "searchable": true
+    },
+
+
+    
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]

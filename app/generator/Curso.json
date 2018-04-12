@@ -1,0 +1,85 @@
+[
+    {
+        "name": "id",
+        "dbType": "increments",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false
+    },
+
+     {
+        "name": "id_seg",
+        "dbType": "integer:unsigned:default,0:foreign,seguimientos,id",
+        "relation": "mt1,Seguimiento,id_seg,id"
+    },
+
+     {
+        "name": "id_area",
+        "dbType": "integer:unsigned:default,0:foreign,areas,id",
+        "relation": "mt1,Area,id_area,id"
+    },
+
+     {
+        "name": "id_gru",
+        "dbType": "integer:unsigned:default,0:foreign,grupos,id",
+        "relation": "mt1,Grupo,id_gru,id"
+    },
+
+     {
+       "type": "relation",
+       "relation": "1tm,detallenotas"
+       
+    },
+    
+    {
+        "name": "nombre_cur",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+
+    {
+        "name": "descripcion_cur",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+
+
+    {
+        "name": "estado_seg",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required",
+        "searchable": true
+    },
+    
+    {
+        "name": "created_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    },
+    {
+        "name": "updated_at",
+        "dbType": "timestamp",
+        "htmlType": "",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": false,
+        "inForm": false,
+        "inIndex": false
+    }
+]
